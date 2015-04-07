@@ -1,0 +1,57 @@
+body {
+	background-color: aquamarine;
+}
+img {
+	float: left;
+	width: 400px;
+	height: 300px;
+	border: 2px solid green;
+	margin-right: 20px;
+}
+.breeds {
+	font-size: 30;
+	padding: 10px;
+	font-family: garamond;
+	border: 2px dashed green;
+	width: 700px;
+	background-color: tomato;
+	color: forestgreen;
+
+}
+h1 {
+	text-align: center;
+	margin: 20px auto;
+	border: 5px ridge gold;
+	width: 280px;
+	border-radius: 20px;
+	padding: 10px;
+	color: blue;
+	background-color: lavender;
+}
+h2 {
+	width: 300px;
+	text-align: center;;
+	color: orange;
+	padding: 5px;
+	margin-right: 100px;
+	
+}
+.type {
+	float: right;
+	border: 5px solid orange;
+	background-color: blue;
+	width: 490px;
+}
+li {
+	font-family: rockwell;
+	font-size: 20;
+	padding-bottom: 10px;
+	list-style: none;
+}
+ul {
+	width: 450px;;
+	color: orange;
+}
+a {
+	text-decoration: none;
+}
