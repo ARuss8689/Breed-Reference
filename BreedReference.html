@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<title>
 			Breed Reference
 		</title>
@@ -47,27 +48,29 @@
 			</ul>	
 		</nav>	
 
+		<div class="firstline">
+		
 		<div class="imgleft">
 			<img src="http://www.clipartbest.com/cliparts/RcG/7eL/RcG7eL5cL.jpeg">
 		</div>
-
-		<div class="imgright">
-			<img src="http://www.clipartbest.com/cliparts/RcG/7eL/RcG7eL5cL.jpeg">
-		</div>
-
-		<div class="maintext">
 
 		<h1>
 			Breed Reference
 		</h1>
 
+		<div class="imgright">
+			<img src="http://www.clipartbest.com/cliparts/RcG/7eL/RcG7eL5cL.jpeg">
+		</div>
+
+		<div style="clear: both;"></div>
+		</div>
+		
+
 		<div class="subline">
 			<p>
 				Your Guide to Choosing the Right Dog Breed for You
 			</p>
-		</div>
-
-		</div>
+		</div>	
 
 		<div class="briefhistory">
 			<h3>
@@ -95,9 +98,29 @@
 
 		<div class="footer">
 			<h4>
-				Click on the classifications at the top of the page to find out more about each type, as well as the history and temperament of the individual dog breeds that make up each category!
+				Click on the classifications at the top of the page to find out more about each type, as well as the history and temperament of the individual dog breeds that make up each category! Click to hide.
 			</h4>
-		</div>		
+		</div>	
+		<script>
+			$(document).ready(function(){
+				var infade = function(){
+					$("h1").fadeIn(3000)
+				}
+				$("h1").hide (0, infade);
+				$(".imgleft").hide (0, function(){
+					$(".imgleft").fadeIn(3000)
+				});
+				$(".imgright").hide (0, function(){
+					$(".imgright").fadeIn(3000)
+				});
+
+				$(".footer").click(function(){
+					$(".footer").fadeOut(2000)
+				});
+			
+
+				});
+		</script>	
 
 	</body>
 	
